@@ -1,0 +1,22 @@
+.baseHead {
+  color: var(--black);
+  font-family: var(--headline-font);
+  font-weight: 400;
+  line-height: 1.5;
+
+  &.mainHead {
+    position: relative;
+    z-index: 2;
+    font-size: var(--main-head-size);
+  }
+
+  &.subHead {
+    position: relative;
+    z-index: 2;
+    font-size: var(--secondary-head-size);
+  }
+
+  &.center {
+    text-align: center;
+  }
+}
