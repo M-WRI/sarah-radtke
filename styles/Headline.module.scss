@@ -1,6 +1,8 @@
 .baseHead {
   color: var(--black);
   font-family: var(--headline-font);
+  font-weight: 400;
+  line-height: 1.5;
 
   &.mainHead {
     position: relative;

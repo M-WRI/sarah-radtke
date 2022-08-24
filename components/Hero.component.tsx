@@ -6,52 +6,33 @@ import { Text } from "./Text.component";
 import { Headline } from "./Headline.component";
 // TYPES
 import { IHeroProps } from "../types/hero.types";
+// ANIMATION
+import { animation } from "../animation/heroAnimation";
 // STYLES
 import styles from "../styles/Hero.module.scss";
 import Image from "next/image";
 
-export const Hero = ({ img, text, title, isMain = false }: IHeroProps) => {
-  const animation = {
-    imageContainer: {
-      width: "90%",
-      transition: {
-        delay: 0.5,
-        ease: [0.7, 0.135, 0.235, 0.99],
-        duration: 2.4,
-      },
-    },
-    image: {
-      y: 0,
-      transition: {
-        delay: 0.5,
-        ease: [0.7, 0.135, 0.235, 0.99],
-        duration: 1.2,
-      },
-    },
-    textContainer: {
-      opacity: 1,
-      y: "0%",
-      transition: {
-        delay: 0.8,
-        ease: [0.7, 0.135, 0.235, 0.99],
-        duration: 1.2,
-      },
-    },
-  };
-
+export const Hero = ({
+  img,
+  text,
+  title,
+  isMain = false,
+  headType = "h2",
+  center = false,
+}: IHeroProps) => {
   const { ref, inView } = useInView();
 
   const imgConCtrl = useAnimation();
   const imgCtrl = useAnimation();
-  // const textBox = useAnimation();
+  const textBox = useAnimation();
 
   useEffect(() => {
     if (inView) {
       imgConCtrl.start("imageContainer");
       imgCtrl.start("image");
-      // textBox.start("textContainer");
+      textBox.start("textContainer");
     }
-  }, [inView, imgCtrl, imgConCtrl]);
+  }, [inView, imgCtrl, imgConCtrl, textBox]);
 
   return (
     <section ref={ref} className={styles.container}>
@@ -78,14 +59,21 @@ export const Hero = ({ img, text, title, isMain = false }: IHeroProps) => {
           )}
         </motion.div>
       </motion.div>
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: "50%" }}
+        variants={animation}
+        animate={textBox}
         className={
           isMain ? styles.heroTextContainerIndex : styles.heroTextContainer
         }
       >
-        {title && <Headline>{title}</Headline>}
-        {text && <Text>{text}</Text>}
-      </div>
+        {title && (
+          <Headline type={headType} center={center}>
+            {title}
+          </Headline>
+        )}
+        {text && <Text center={center}>{text}</Text>}
+      </motion.div>
     </section>
   );
 };
