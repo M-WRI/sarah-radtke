@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+// COMPONENTS
+import { Text } from "./Text.component";
+import { Headline } from "./Headline.component";
 // TYPES
 import { IHeroProps } from "../types/hero.types";
 // STYLES
@@ -80,8 +83,8 @@ export const Hero = ({ img, text, title, isMain = false }: IHeroProps) => {
           isMain ? styles.heroTextContainerIndex : styles.heroTextContainer
         }
       >
-        {title && <h2>{title}</h2>}
-        {text && <p>{text}</p>}
+        {title && <Headline>{title}</Headline>}
+        {text && <Text>{text}</Text>}
       </div>
     </section>
   );
