@@ -54,6 +54,7 @@ export const Hero = ({
               alt="test"
               layout="fill"
               objectFit="cover"
+              quality={20}
               priority
             />
           )}
