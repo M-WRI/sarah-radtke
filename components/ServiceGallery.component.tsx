@@ -26,7 +26,7 @@ export const ServiceGallery = (): JSX.Element => {
           {data.map((item: IItemData) => {
             return (
               <li
-                key={item.id}
+                key={`navbar-${item.id}`}
                 className={`${styles.galleryNavItem} ${
                   item.id === index && styles.active
                 }`}
@@ -43,7 +43,10 @@ export const ServiceGallery = (): JSX.Element => {
         {data.map((article: IArticleData) => (
           <>
             {article.id === index && (
-              <div key={article.id} className={styles.articleContainer}>
+              <div
+                key={`article-${article.id}`}
+                className={styles.articleContainer}
+              >
                 <div className={styles.imageContainer}>
                   <motion.div
                     initial={{ y: "100%" }}

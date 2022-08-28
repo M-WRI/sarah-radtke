@@ -4,6 +4,10 @@
   font-weight: 400;
   line-height: 1.5;
 
+  &.margin {
+    margin-bottom: 1.5rem;
+  }
+
   &.mainHead {
     position: relative;
     z-index: 2;
