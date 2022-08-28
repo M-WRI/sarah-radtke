@@ -6,6 +6,7 @@ import styles from "../styles/Headline.module.scss";
 export const Headline = ({
   children,
   type = "h2",
+  margin = true,
   center = true,
 }: IHeadlineProps) => {
   const headType = (type: THeadlineType) => {
@@ -15,7 +16,7 @@ export const Headline = ({
           <h1
             className={`${styles.baseHead} ${styles.mainHead} ${
               center ? styles.center : ""
-            }`}
+            } ${margin ? styles.margin : ""}`}
           >
             {children}
           </h1>
@@ -25,7 +26,7 @@ export const Headline = ({
           <h2
             className={`${styles.baseHead} ${styles.subHead} ${
               center ? styles.center : ""
-            }`}
+            }  ${margin ? styles.margin : ""}`}
           >
             {children}
           </h2>

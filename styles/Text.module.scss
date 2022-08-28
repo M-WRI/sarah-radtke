@@ -4,6 +4,10 @@
   color: var(--black);
   line-height: 1.5;
 
+  &.margin {
+    margin-bottom: 2rem;
+  }
+
   &.center {
     text-align: center;
   }
