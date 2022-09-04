@@ -9,13 +9,15 @@ import { List } from "./List.component";
 export const InfoBox = ({ headline, text, list }: IInfoBoxProps) => {
   return (
     <section className={styles.container}>
-      {headline && (
-        <Headline type="h2" center>
-          {headline}
-        </Headline>
-      )}
-      {text && <Text center>{text}</Text>}
-      {list && list.length && <List list={list} />}
+      <div className={styles.wrapper}>
+        {headline && (
+          <Headline type="h2" center>
+            {headline}
+          </Headline>
+        )}
+        {text && <Text center>{text}</Text>}
+        {list && list.length && <List list={list} />}
+      </div>
     </section>
   );
 };

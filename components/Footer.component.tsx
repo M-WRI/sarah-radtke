@@ -6,7 +6,7 @@ import data from "../api/footer.json";
 // STYLES
 import styles from "../styles/Footer.module.scss";
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
   return (
     <footer className={styles.container}>
       <div className={styles.addressContainer}>
