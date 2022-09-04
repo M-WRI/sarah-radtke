@@ -73,8 +73,6 @@ export const PhotoBox = ({
     }
   }, [inView, headCtrl, textCtrl, linkCtrl]);
 
-  console.log(innerWidth);
-
   return (
     <section
       ref={reference}
