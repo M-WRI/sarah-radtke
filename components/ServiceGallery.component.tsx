@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 // DATA
 import data from "../api/serviceGallery.json";
@@ -40,38 +40,37 @@ export const ServiceGallery = (): JSX.Element => {
         </ul>
       </div>
       <div className={styles.contentContainer}>
-        {data.map((article: IArticleData) => (
-          <>
-            {article.id === index && (
-              <div
-                key={`article-${article.id}`}
-                className={styles.articleContainer}
-              >
-                <div className={styles.imageContainer}>
+        {data.map(
+          (article: IArticleData): JSX.Element => (
+            <div key={article.id}>
+              {article.id === index && (
+                <div className={styles.articleContainer}>
+                  <div className={styles.imageContainer}>
+                    <motion.div
+                      initial={{ y: "100%" }}
+                      variants={animation}
+                      animate={"image"}
+                      className={styles.image}
+                    >
+                      {article.id}
+                    </motion.div>
+                  </div>
                   <motion.div
-                    initial={{ y: "100%" }}
+                    initial={{ y: "100%", opacity: 0 }}
                     variants={animation}
-                    animate={"image"}
-                    className={styles.image}
+                    animate={"contentBox"}
+                    className={styles.article}
                   >
-                    {article.id}
+                    <Headline type="h1" center={false}>
+                      {article.title}
+                    </Headline>
+                    <Text>{article.text}</Text>
                   </motion.div>
                 </div>
-                <motion.div
-                  initial={{ y: "100%", opacity: 0 }}
-                  variants={animation}
-                  animate={"contentBox"}
-                  className={styles.article}
-                >
-                  <Headline type="h1" center={false}>
-                    {article.title}
-                  </Headline>
-                  <Text>{article.text}</Text>
-                </motion.div>
-              </div>
-            )}
-          </>
-        ))}
+              )}
+            </div>
+          )
+        )}
       </div>
     </div>
   );

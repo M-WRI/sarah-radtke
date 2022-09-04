@@ -7,7 +7,7 @@ export const Headline = ({
   children,
   type = "h2",
   margin = true,
-  center = true,
+  center = false,
 }: IHeadlineProps) => {
   const headType = (type: THeadlineType) => {
     switch (type) {
