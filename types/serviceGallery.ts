@@ -1,9 +1,13 @@
+// TYPES
+import { TImageType } from "./image.types";
+
 export interface IArticleData {
   id: number | string;
   title: string;
   text: string;
+  alt: string;
   // link: string;
-  img: string;
+  img: TImageType;
 }
 
 export interface IItemData {

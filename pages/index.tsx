@@ -3,14 +3,20 @@ import Head from "next/head";
 import data from "../api/home.json";
 // COMPONENTS
 import { Hero } from "../components/Hero.component";
+import { ServiceGallery } from "../components/ServiceGallery.component";
+import { InfoBox } from "../components/InfoBox.component";
+import { PhotoBox } from "../components/PhotoBox.component";
+import { PriceInfo } from "../components/PriceInfo.component";
+import { PreFooter } from "../components/PreFooter.component";
+import { Footer } from "../components/Footer.component";
 // TYPES
 import type { NextPage } from "next";
 // TEST ELEMENTS
 import testImg from "../img/test_img.jpeg";
-import { ServiceGallery } from "../components/ServiceGallery";
 
 const Home: NextPage = () => {
   const image = testImg;
+
   return (
     <div>
       <Head>
@@ -20,6 +26,20 @@ const Home: NextPage = () => {
       </Head>
       <Hero img={image} title={data.heroData.title} isMain center />
       <ServiceGallery />
+      <InfoBox
+        headline={data.symptomData.headline}
+        text={data.symptomData.text}
+        list={data.list}
+      />
+      <PhotoBox
+        title={data.personalData.title}
+        text={data.personalData.text}
+        img={data.personalData.img}
+        link={data.personalData.link}
+      />
+      <PriceInfo />
+      <PreFooter />
+      <Footer />
     </div>
   );
 };
