@@ -1,9 +1,19 @@
 {
   "address": {
     "headline": "Sarah Radtke",
-    "info": "Privatpraxis für Physiotherapie, // Manuelle Therapie und Akupunktur",
+    "info": {
+      "partI": "Privatpraxis für Physiotherapie",
+      "partII": " Manuelle Therapie und Akupunktur"
+    },
     "address": "Waitzstraße 7 22607 Hamburg"
   },
-  "schedule": "Termine telefonisch von Mo | Fr 08 - 20 Uhr // Termine auch am Wochenende // Ich komme gerne auch zu Ihnen nach Hause",
-  "contact": "040-88358553 // praxis@sarahradtke.de"
+  "schedule": {
+    "partI": "Termine telefonisch von Mo | Fr 08 - 20 Uhr",
+    "partII": "Termine auch am Wochenende",
+    "partIII": "Ich komme gerne auch zu Ihnen nach Hause"
+  },
+  "contact": {
+    "partI": "040-88358553",
+    "partII": "praxis@sarahradtke.de"
+  }
 }

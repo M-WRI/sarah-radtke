@@ -8,6 +8,7 @@ import { InfoBox } from "../components/InfoBox.component";
 import { PhotoBox } from "../components/PhotoBox.component";
 import { PriceInfo } from "../components/PriceInfo.component";
 import { PreFooter } from "../components/PreFooter.component";
+import { Footer } from "../components/Footer.component";
 // TYPES
 import type { NextPage } from "next";
 // TEST ELEMENTS
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
       />
       <PriceInfo />
       <PreFooter />
+      <Footer />
     </div>
   );
 };
