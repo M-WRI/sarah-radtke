@@ -24,3 +24,18 @@
     text-align: center;
   }
 }
+
+.sanserif {
+  font-size: var(--secondary-head-size);
+  color: var(--primary-color-dark);
+  text-transform: uppercase;
+  line-height: 1.5;
+
+  &.center {
+    text-align: center;
+  }
+
+  &.margin {
+    margin-bottom: 1.5rem;
+  }
+}

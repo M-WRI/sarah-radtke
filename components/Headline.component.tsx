@@ -31,6 +31,17 @@ export const Headline = ({
             {children}
           </h2>
         );
+
+      case "sanserif":
+        return (
+          <h2
+            className={`${styles.sanserif} ${center ? styles.center : ""}  ${
+              margin ? styles.margin : ""
+            }`}
+          >
+            {children}
+          </h2>
+        );
     }
   };
 
