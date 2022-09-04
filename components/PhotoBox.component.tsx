@@ -10,6 +10,7 @@ import { animation } from "../animation/photoBoxAnimation";
 import { IPhotoBoxProps } from "../types/photoBox.types";
 // STYLES
 import styles from "../styles/PhotoBox.module.scss";
+import { ImageComponent } from "./Image.component";
 
 export const PhotoBox = ({
   title,
@@ -87,7 +88,9 @@ export const PhotoBox = ({
               style={{
                 transform: `translateY(${scroll < 1 && offsetY * 0.2}px)`,
               }}
-            ></div>
+            >
+              <ImageComponent type={img} alt={img} />
+            </div>
           )}
         </div>
       </div>

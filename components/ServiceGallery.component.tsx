@@ -5,6 +5,7 @@ import data from "../api/serviceGallery.json";
 // COMPONENTS
 import { Headline } from "./Headline.component";
 import { Text } from "./Text.component";
+import { ImageComponent } from "./Image.component";
 // ANIMATION
 import { animation } from "../animation/serviceGallery";
 // TYPES
@@ -52,7 +53,7 @@ export const ServiceGallery = (): JSX.Element => {
                       animate={"image"}
                       className={styles.image}
                     >
-                      {article.id}
+                      <ImageComponent type={article.img} alt={article.alt} />
                     </motion.div>
                   </div>
                   <motion.div

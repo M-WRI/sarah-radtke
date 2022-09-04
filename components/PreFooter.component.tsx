@@ -1,5 +1,6 @@
 // COMPONENTS
 import { Headline } from "./Headline.component";
+import { ImageComponent } from "./Image.component";
 // DATA
 import head from "../api/preFooter.json";
 import list from "../api/serviceGallery.json";
@@ -15,6 +16,7 @@ export const PreFooter = (): JSX.Element => {
       <div className={styles.listContainer}>
         {list.map((item) => (
           <div key={item.id} className={styles.imageContainer}>
+            <ImageComponent type={item.img} alt={item.alt} />
             <Headline center>{item.title}</Headline>
           </div>
         ))}

@@ -11,6 +11,7 @@
   .galleryNavContainer {
     list-style: none;
     min-width: 20rem;
+
     .galleryNavItem {
       cursor: pointer;
       white-space: nowrap;
@@ -52,14 +53,13 @@
       display: flex;
       align-items: center;
       .imageContainer {
-        position: relative;
         right: -4rem;
         width: 500px;
         height: 500px;
         overflow: hidden;
 
         .image {
-          position: absolute;
+          position: relative;
           display: flex;
           justify-content: center;
           align-items: center;
