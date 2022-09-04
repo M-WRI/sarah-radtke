@@ -1,7 +1,7 @@
 // COMPONENTS
 import { Headline } from "./Headline.component";
 // DATA
-import data from "../api/PreFooter.json";
+import data from "../api/preFooter.json";
 // STYLES
 import styles from "../styles/preFooter.module.scss";
 
