@@ -10,7 +10,9 @@ export const PriceInfo = () => {
   return (
     <section className={styles.container}>
       <div className={styles.generalInfo}>
-        <Text center>{data.generalInformation}</Text>
+        <Text center margin={false}>
+          {data.generalInformation}
+        </Text>
       </div>
       <div>
         <Headline type="sanserif" center>

@@ -5,12 +5,13 @@ import data from "../api/home.json";
 import { Hero } from "../components/Hero.component";
 import { ServiceGallery } from "../components/ServiceGallery.component";
 import { InfoBox } from "../components/InfoBox.component";
+import { PhotoBox } from "../components/PhotoBox.component";
+import { PriceInfo } from "../components/PriceInfo.component";
+import { PreFooter } from "../components/PreFooter.component";
 // TYPES
 import type { NextPage } from "next";
 // TEST ELEMENTS
 import testImg from "../img/test_img.jpeg";
-import { PhotoBox } from "../components/PhotoBox.component";
-import { PriceInfo } from "../components/PriceInfo.component";
 
 const Home: NextPage = () => {
   const image = testImg;
@@ -36,6 +37,7 @@ const Home: NextPage = () => {
         link={data.personalData.link}
       />
       <PriceInfo />
+      <PreFooter />
     </div>
   );
 };
