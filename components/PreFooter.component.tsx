@@ -1,7 +1,8 @@
 // COMPONENTS
 import { Headline } from "./Headline.component";
 // DATA
-import data from "../api/preFooter.json";
+import head from "../api/preFooter.json";
+import list from "../api/serviceGallery.json";
 // STYLES
 import styles from "../styles/PreFooter.module.scss";
 
@@ -9,10 +10,10 @@ export const PreFooter = (): JSX.Element => {
   return (
     <section className={styles.container}>
       <Headline type="h1" center>
-        {data.head}
+        {head.head}
       </Headline>
       <div className={styles.listContainer}>
-        {data.list.map((item) => (
+        {list.map((item) => (
           <div key={item.id} className={styles.imageContainer}>
             <Headline center>{item.title}</Headline>
           </div>

@@ -20,7 +20,7 @@ export const ServiceGallery = (): JSX.Element => {
   };
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div>
         <ul className={styles.galleryNavContainer}>
           {data.map((item: IItemData) => {
@@ -72,6 +72,6 @@ export const ServiceGallery = (): JSX.Element => {
           )
         )}
       </div>
-    </div>
+    </section>
   );
 };

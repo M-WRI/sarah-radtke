@@ -1,4 +1,10 @@
 .container {
-  padding: 8rem 2rem;
+  margin: 9rem 0;
   background: var(--primary-color-light);
+
+  .wrapper {
+    margin: 0 auto;
+    padding: 9rem 1rem;
+    max-width: 1280px;
+  }
 }
