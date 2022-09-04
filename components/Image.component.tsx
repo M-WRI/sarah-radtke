@@ -30,13 +30,17 @@ export const ImageComponent = ({ type, alt }: IImageProps): JSX.Element => {
   const img = imageSwitch(type);
 
   return (
-    <Image
-      src={img}
-      alt={alt}
-      layout="fill"
-      objectFit="cover"
-      quality={20}
-      priority
-    />
+    <>
+      {img && (
+        <Image
+          src={img}
+          alt={alt}
+          layout="fill"
+          objectFit="cover"
+          quality={20}
+          priority
+        />
+      )}
+    </>
   );
 };
