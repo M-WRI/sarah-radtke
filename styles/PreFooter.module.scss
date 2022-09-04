@@ -9,6 +9,7 @@
     grid-gap: 1rem;
 
     .imageContainer {
+      position: relative;
       height: 350px;
       background: var(--demo-image-color);
       display: flex;
