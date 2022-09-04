@@ -10,6 +10,7 @@ import type { NextPage } from "next";
 // TEST ELEMENTS
 import testImg from "../img/test_img.jpeg";
 import { PhotoBox } from "../components/PhotoBox.component";
+import { PriceInfo } from "../components/PriceInfo.component";
 
 const Home: NextPage = () => {
   const image = testImg;
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
         img={data.personalData.img}
         link={data.personalData.link}
       />
+      <PriceInfo />
     </div>
   );
 };

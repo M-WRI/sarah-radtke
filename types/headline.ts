@@ -5,4 +5,4 @@ export interface IHeadlineProps {
   margin?: boolean;
 }
 
-export type THeadlineType = "h1" | "h2";
+export type THeadlineType = "h1" | "h2" | "sanserif";
