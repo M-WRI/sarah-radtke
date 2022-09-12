@@ -3,6 +3,21 @@
   margin: 9rem auto;
   max-width: 1280px;
 
+  .listContaienerSm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    .imageContainer {
+      position: relative;
+      height: 350px;
+      background: var(--demo-image-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   .listContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -21,6 +36,15 @@
 
 @media (max-width: 768px) {
   .container {
+    .listContaienerSm {
+      grid-template-columns: repeat(2, 1fr);
+
+      .imageContainer {
+        &:last-child {
+          grid-column: span 2;
+        }
+      }
+    }
     .listContainer {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -29,6 +53,15 @@
 
 @media (max-width: 425px) {
   .container {
+    .listContaienerSm {
+      grid-template-columns: repeat(1, 1fr);
+
+      .imageContainer {
+        &:last-child {
+          grid-column: unset;
+        }
+      }
+    }
     .listContainer {
       grid-template-columns: repeat(1, 1fr);
     }

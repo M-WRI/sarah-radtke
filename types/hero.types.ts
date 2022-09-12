@@ -1,9 +1,8 @@
 // TYPES
-import { StaticImageData } from "next/image";
 import { THeadlineType } from "./headline";
 
 export interface IHeroProps {
-  img: StaticImageData;
+  img: string;
   title?: string;
   text?: string;
   isMain?: boolean;
