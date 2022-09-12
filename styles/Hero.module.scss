@@ -33,3 +33,13 @@
   box-shadow: var(--box-shadow);
   padding: 2rem;
 }
+
+.heroTextContainer {
+  max-width: 40rem;
+  position: absolute;
+  bottom: 5vh;
+  right: 0;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
