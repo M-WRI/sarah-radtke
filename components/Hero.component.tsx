@@ -4,14 +4,13 @@ import { useInView } from "react-intersection-observer";
 // COMPONENTS
 import { Text } from "./Text.component";
 import { Headline } from "./Headline.component";
+import { ImageComponent } from "./Image.component";
 // TYPES
 import { IHeroProps } from "../types/hero.types";
 // ANIMATION
 import { animation } from "../animation/heroAnimation";
 // STYLES
 import styles from "../styles/Hero.module.scss";
-import Image from "next/image";
-import { ImageComponent } from "./Image.component";
 
 export const Hero = ({
   img,
@@ -49,7 +48,7 @@ export const Hero = ({
           variants={animation}
           animate={imgCtrl}
         >
-          {img && <ImageComponent type="title" alt="Titelbild Sarah Radtke" />}
+          {img && <ImageComponent type={img} alt="Titelbild Sarah Radtke" />}
         </motion.div>
       </motion.div>
       <motion.div
