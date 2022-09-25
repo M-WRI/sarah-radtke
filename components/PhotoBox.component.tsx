@@ -18,6 +18,7 @@ export const PhotoBox = ({
   img,
   link,
   invert = false,
+  underline = false,
 }: IPhotoBoxProps) => {
   const [innerHeight, setInnerHeight] = useState<number>();
   const [innerWidth, setInnerWidth] = useState<number>();
@@ -102,7 +103,11 @@ export const PhotoBox = ({
           animate={headCtrl}
         >
           {innerWidth && (
-            <Headline type="h1" center={innerWidth <= 830 ? true : false}>
+            <Headline
+              type="h1"
+              center={innerWidth <= 830 ? true : false}
+              underline={underline}
+            >
               {title}
             </Headline>
           )}

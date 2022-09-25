@@ -8,39 +8,48 @@ export const Headline = ({
   type = "h2",
   margin = true,
   center = false,
+  underline = false,
 }: IHeadlineProps) => {
   const headType = (type: THeadlineType) => {
     switch (type) {
       case "h1":
         return (
-          <h1
-            className={`${styles.baseHead} ${styles.mainHead} ${
-              center ? styles.center : ""
-            } ${margin ? styles.margin : ""}`}
-          >
-            {children}
-          </h1>
+          <div className={`${center ? styles.center : ""}`}>
+            <h1
+              className={`${styles.baseHead} ${styles.mainHead} ${
+                margin ? styles.margin : ""
+              } ${underline && styles.underline}`}
+            >
+              {children}
+            </h1>
+          </div>
         );
       case "h2":
         return (
-          <h2
-            className={`${styles.baseHead} ${styles.subHead} ${
-              center ? styles.center : ""
-            }  ${margin ? styles.margin : ""}`}
-          >
-            {children}
-          </h2>
+          <div className={`${center ? styles.center : ""}`}>
+            <h2
+              className={`${styles.baseHead} ${styles.subHead} ${
+                center ? styles.center : ""
+              }  ${margin ? styles.margin : ""}  ${
+                underline && styles.underline
+              }`}
+            >
+              {children}
+            </h2>
+          </div>
         );
 
       case "sanserif":
         return (
-          <h2
-            className={`${styles.sanserif} ${center ? styles.center : ""}  ${
-              margin ? styles.margin : ""
-            }`}
-          >
-            {children}
-          </h2>
+          <div className={`${center ? styles.center : ""}`}>
+            <h2
+              className={`${styles.sanserif} ${center ? styles.center : ""}  ${
+                margin ? styles.margin : ""
+              }  ${underline && styles.underline}`}
+            >
+              {children}
+            </h2>
+          </div>
         );
     }
   };

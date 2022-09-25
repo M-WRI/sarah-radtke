@@ -8,6 +8,7 @@ import list from "../api/serviceGallery.json";
 import { IPreFooterProps } from "../types/preFooter.types";
 // STYLES
 import styles from "../styles/PreFooter.module.scss";
+import Link from "next/link";
 
 export const PreFooter = ({ site }: IPreFooterProps): JSX.Element => {
   const filteredList = list.filter((item) => item.title !== site);
@@ -25,10 +26,17 @@ export const PreFooter = ({ site }: IPreFooterProps): JSX.Element => {
         }
       >
         {filteredList.map((item) => (
-          <div key={item.id} className={styles.imageContainer}>
-            <ImageComponent type={item.img} alt={item.alt} />
-            <Headline center>{item.title}</Headline>
-          </div>
+          <Link key={item.id} href={item.link}>
+            <a>
+              <div className={styles.imageContainer}>
+                <div className={styles.layer} />
+                <ImageComponent type={item.img} alt={item.alt} />
+                <Headline center underline>
+                  {item.title}
+                </Headline>
+              </div>
+            </a>
+          </Link>
         ))}
       </div>
     </section>
