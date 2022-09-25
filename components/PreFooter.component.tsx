@@ -26,8 +26,11 @@ export const PreFooter = ({ site }: IPreFooterProps): JSX.Element => {
       >
         {filteredList.map((item) => (
           <div key={item.id} className={styles.imageContainer}>
+            <div className={styles.layer} />
             <ImageComponent type={item.img} alt={item.alt} />
-            <Headline center>{item.title}</Headline>
+            <Headline center underline>
+              {item.title}
+            </Headline>
           </div>
         ))}
       </div>

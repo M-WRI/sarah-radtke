@@ -19,6 +19,7 @@ export const Hero = ({
   isMain = false,
   headType = "h2",
   center = false,
+  underline = false,
 }: IHeroProps) => {
   const { ref, inView } = useInView();
 
@@ -60,7 +61,7 @@ export const Hero = ({
         }
       >
         {title && (
-          <Headline type={headType} center={center}>
+          <Headline type={headType} center={center} underline={underline}>
             {title}
           </Headline>
         )}

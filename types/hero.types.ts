@@ -8,4 +8,5 @@ export interface IHeroProps {
   isMain?: boolean;
   headType?: THeadlineType;
   center?: boolean;
+  underline?: boolean;
 }

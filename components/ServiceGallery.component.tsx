@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 // DATA
 import data from "../api/serviceGallery.json";
@@ -62,7 +62,7 @@ export const ServiceGallery = (): JSX.Element => {
                     animate={"contentBox"}
                     className={styles.article}
                   >
-                    <Headline type="h1" center={false}>
+                    <Headline type="h1" center={false} underline>
                       {article.title}
                     </Headline>
                     <Text>{article.text}</Text>

@@ -37,7 +37,7 @@ export const ImageComponent = ({ type, alt }: IImageProps): JSX.Element => {
           alt={alt}
           layout="fill"
           objectFit="cover"
-          quality={20}
+          quality={40}
           priority
         />
       )}
