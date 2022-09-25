@@ -1,0 +1,25 @@
+{
+  "heroTitle": "Akupunktur",
+  "heroText": "Akupunktur ist eine jahrtausendealte Behandlungsmethode aus China, entstammt der traditionellen chinesischen Medizin (TCM), bei der eine therapeutische Wirkung durch Nadelstiche an bestimmten Punkten des Körpers erzielt wird.",
+
+  "photoTitle": "Individuell für Sie angepasst",
+  "photoText": "Das Qi ist „die Lebensenergie des Körpers“ und zirkuliert auf den Meridianen (Leitbahnen) und hat einen Einfluss auf alle Körperfunktionen, es gibt 14 Meridiane und 720 Akupunkturpunkte. Ein gestörter Energiefluss kann zu Erkrankungen führen, durch die Akupunktur kann die Störung im Fluss des Qi wieder behoben werden. Vor jeder Akupunkturbehandlung wird eine ausführliche TCM-Anamnese erhoben, um der Ursache mehr auf den Grund zu kommen.",
+
+  "symptomData": {
+    "headline": "Akupunktur kann in vielen verschiedenen Bereichen eingesetzt werden"
+  },
+
+  "list": [
+    {
+      "id": 1,
+      "title": "vor allem bei unerfüllten Kinderwunsch hat es schon große Ziele erreicht"
+    },
+    { "id": 2, "title": "Wechseljahrsbeschwerden" },
+    { "id": 3, "title": "Menstruationsbeschwerden, unregelmäßiger Zyklus" },
+    { "id": 4, "title": "Alle orthopädischen Erkrankungen/Beschwerden" },
+    { "id": 5, "title": "Kopfschmerzen" },
+    { "id": 6, "title": "Tinnitus, Ohrgeräuschen" },
+    { "id": 7, "title": "Schwindel" },
+    { "id": 8, "title": "Kiefergelenkbeschwerden" }
+  ]
+}
