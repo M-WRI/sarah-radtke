@@ -31,6 +31,15 @@ export const Navigation = (): JSX.Element => {
             </li>
           ))}
         </ul>
+        <ul className={styles.mobileNavBar}>
+          {data.map((item) => (
+            <li key={item.id} className={styles.mobileNavItem}>
+              <Link href={item.slug}>
+                <a>{item.title}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
