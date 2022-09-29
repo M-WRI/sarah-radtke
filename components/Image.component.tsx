@@ -12,6 +12,7 @@ import Bindegewebe from "../img/bindegewebsmassage_img_sarah_radtke.jpeg";
 import Manual from "../img/manual_therapy_img_sarah_radtke.jpeg";
 import About from "../img/about_img_sarah_radkte.jpeg";
 import MittelPunkt from "../img/mittelpunkt_img_sarah_radtke.jpeg";
+import Personal from "../img/personal_img_sarah_radtke.jpeg";
 // TYPE
 import { IImageProps, TImageType } from "../types/image.types";
 
@@ -40,6 +41,8 @@ export const ImageComponent = ({ type, alt }: IImageProps): JSX.Element => {
         return About;
       case "mittelpunkt":
         return MittelPunkt;
+      case "personal":
+        return Personal;
     }
   };
 

@@ -28,7 +28,7 @@ const Akupunktur: NextPage = () => {
       <PhotoBox
         title={data.photoTitle}
         text={data.photoText}
-        img=""
+        img="personal"
         underline
       />
       <InfoBox headline={data.symptomData.headline} list={data.list} />
