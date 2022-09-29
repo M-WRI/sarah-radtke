@@ -33,7 +33,7 @@ const Massage: NextPage = () => {
       {data.photoTextList.map((item, i) => (
         <PhotoBox
           key={item.id}
-          img={item.photoTitle}
+          img={item.img}
           title={item.photoTitle}
           text={item.photoText}
           invert={i % 2 === 1 && true}

@@ -72,7 +72,7 @@
     .listContaienerSm {
       grid-template-columns: repeat(2, 1fr);
 
-      .imageContainer {
+      a {
         &:last-child {
           grid-column: span 2;
         }
@@ -89,7 +89,7 @@
     .listContaienerSm {
       grid-template-columns: repeat(1, 1fr);
 
-      .imageContainer {
+      a {
         &:last-child {
           grid-column: unset;
         }

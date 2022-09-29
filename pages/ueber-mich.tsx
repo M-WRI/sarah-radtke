@@ -29,7 +29,7 @@ const UeberMich: NextPage = () => {
       <PhotoBox
         title={data.photoTitle}
         text={data.photoText}
-        img=""
+        img="mittelpunkt"
         underline
       />
       <InfoBox text={data.symptomText} />
