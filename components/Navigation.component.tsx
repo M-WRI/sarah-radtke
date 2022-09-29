@@ -1,11 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 // STYLES
 import styles from "../styles/Navigation.module.scss";
 // DATA
 import data from "../api/navigation.json";
-import Image from "next/image";
 
-export const Navigation = (): JSX.Element => {
+export const Navigation = () => {
   return (
     <nav className={styles.container}>
       <div className={styles.wrapper}>
