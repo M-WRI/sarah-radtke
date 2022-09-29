@@ -38,7 +38,7 @@ export const List = ({ list }: IListProps) => {
             <div className={styles.textElement}>
               <motion.div
                 custom={i}
-                initial={{ y: "110%" }}
+                initial={{ y: "130%" }}
                 animate={textCtrl}
                 variants={animation}
               >

@@ -30,7 +30,7 @@ const Cmd: NextPage = () => {
       <PhotoBox
         title={data.photoTitle}
         text={data.photoText}
-        img="cmd"
+        img="cmd2"
         underline
       />
       <PreFooter site="CMD" />

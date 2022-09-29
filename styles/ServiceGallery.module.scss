@@ -119,6 +119,7 @@
 @media (max-width: 730px) {
   .container {
     .contentContainer {
+      overflow: hidden;
       .articleContainer {
         flex-direction: column;
         .imageContainer {
