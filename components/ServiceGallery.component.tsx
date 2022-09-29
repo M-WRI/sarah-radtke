@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 // DATA
 import data from "../api/serviceGallery.json";
@@ -15,9 +15,27 @@ import styles from "../styles/ServiceGallery.module.scss";
 
 export const ServiceGallery = (): JSX.Element => {
   const [index, setIndex] = useState<number | string>(1);
+  const [width, setWidth] = useState<number | null>(null);
 
   const galleryHandeler = (index: string | number): void => {
     setIndex(index);
+  };
+
+  const handleScreenSize = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    window.addEventListener("resize", handleScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", handleScreenSize);
+    };
+  }, []);
+
+  const center = () => {
+    return width && width <= 730 ? true : false;
   };
 
   return (
@@ -62,10 +80,10 @@ export const ServiceGallery = (): JSX.Element => {
                     animate={"contentBox"}
                     className={styles.article}
                   >
-                    <Headline type="h1" center={false} underline>
+                    <Headline type="h1" center={center()} underline>
                       {article.title}
                     </Headline>
-                    <Text>{article.text}</Text>
+                    <Text center={center()}>{article.text}</Text>
                   </motion.div>
                 </div>
               )}
