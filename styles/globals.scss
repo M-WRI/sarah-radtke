@@ -65,8 +65,14 @@
 
 html,
 body {
-  font-family: var(--text-font), BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--text-font), Helvetica;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--headline-font);
+  }
 }
 
 a {
