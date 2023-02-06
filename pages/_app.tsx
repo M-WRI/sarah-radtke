@@ -6,6 +6,7 @@ import { Navigation } from "../components/Navigation.component";
 import type { AppProps } from "next/app";
 // STYLES
 import "../styles/globals.scss";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
