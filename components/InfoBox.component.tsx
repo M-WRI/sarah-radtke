@@ -6,9 +6,9 @@ import { Headline } from "./Headline.component";
 import { Text } from "./Text.component";
 import { List } from "./List.component";
 
-export const InfoBox = ({ headline, text, list }: IInfoBoxProps) => {
+export const InfoBox = ({ headline, text, list, bg = true }: IInfoBoxProps) => {
   return (
-    <section className={styles.container}>
+    <section className={`${bg ? styles.container : styles.container}`}>
       <div className={styles.wrapper}>
         {headline && (
           <Headline type="h2" center>

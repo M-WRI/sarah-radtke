@@ -5,4 +5,5 @@ export interface IInfoBoxProps {
   headline?: string;
   text?: string;
   list?: IListItem[];
+  bg?: boolean;
 }

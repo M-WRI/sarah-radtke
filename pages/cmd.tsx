@@ -5,7 +5,6 @@ import { Footer } from "../components/Footer.component";
 // COMPONENTS
 import { Hero } from "../components/Hero.component";
 import { InfoBox } from "../components/InfoBox.component";
-import { MobileNavigation } from "../components/MobileNavigation.component";
 import { PhotoBox } from "../components/PhotoBox.component";
 import { PreFooter } from "../components/PreFooter.component";
 // TYPES
@@ -26,6 +25,13 @@ const Cmd: NextPage = () => {
         center
         underline
       />
+
+      {/* Create out of this a component */}
+      {/* <InfoBox
+        headline={data.infoBoxOne.title}
+        list={data.infoBoxOne.list}
+        bg={false}
+      /> */}
       <InfoBox headline={data.symptomTitle} list={data.symptomList} />
       <PhotoBox
         title={data.photoTitle}
