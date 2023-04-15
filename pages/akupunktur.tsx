@@ -5,6 +5,9 @@ import { Hero } from "../components/Hero.component";
 import { InfoBox } from "../components/InfoBox.component";
 import { PreFooter } from "../components/PreFooter.component";
 import { PhotoBox } from "../components/PhotoBox.component";
+import { Text } from "../components/Text.component";
+import { Headline } from "../components/Headline.component";
+
 // DATA
 import data from "../api/acupuncture.json";
 // TYPES
@@ -31,6 +34,15 @@ const Akupunktur: NextPage = () => {
         img="personal"
         underline
       />
+      <div
+        className="more-spacing"
+        style={{ maxWidth: 650, padding: "0 1rem", margin: "0 auto" }}
+      >
+        <Headline center underline>
+          {data.info.headline}
+        </Headline>
+        <Text center>{data.info.text}</Text>
+      </div>
       <InfoBox headline={data.symptomData.headline} list={data.list} />
       <PreFooter site="Akupunktur" />
       <Footer />

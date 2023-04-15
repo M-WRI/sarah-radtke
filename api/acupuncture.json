@@ -9,17 +9,18 @@
     "headline": "Akupunktur kann in vielen verschiedenen Bereichen eingesetzt werden"
   },
 
+  "info": {
+    "headline": "vor allem bei unerfüllten Kinderwunsch hat es schon große Ziele erreicht",
+    "text": "Kinderwunsch Akupunktur ist eine wirksame Behandlungsmethode, die Paaren helfen kann, ihren Kinderwunsch zu erfüllen. Bei dieser Behandlungsmethode wird der Körper gezielt dabei unterstützt, seine Fruchtbarkeit zu verbessern und die Chancen auf eine erfolgreiche Schwangerschaft zu erhöhen. Es ist eine natürliche und wirksame Behandlungsmethode, die bei vielen Paaren zu einer erfolgreichen Schwangerschaft geführt hat. Wenn Sie Interesse an der Behandlung haben, können Sie sich gerne in meiner Praxis melden, um mehr über die möglichen Vorteile zu erfahren und eine Behandlung zu erhalten."
+  },
+
   "list": [
-    {
-      "id": 1,
-      "title": "vor allem bei unerfüllten Kinderwunsch hat es schon große Ziele erreicht"
-    },
-    { "id": 2, "title": "Wechseljahrsbeschwerden" },
-    { "id": 3, "title": "Menstruationsbeschwerden, unregelmäßiger Zyklus" },
-    { "id": 4, "title": "Alle orthopädischen Erkrankungen/Beschwerden" },
-    { "id": 5, "title": "Kopfschmerzen" },
-    { "id": 6, "title": "Tinnitus, Ohrgeräuschen" },
-    { "id": 7, "title": "Schwindel" },
-    { "id": 8, "title": "Kiefergelenkbeschwerden" }
+    { "id": 1, "title": "Wechseljahrsbeschwerden" },
+    { "id": 2, "title": "Menstruationsbeschwerden, unregelmäßiger Zyklus" },
+    { "id": 3, "title": "Alle orthopädischen Erkrankungen/Beschwerden" },
+    { "id": 4, "title": "Kopfschmerzen" },
+    { "id": 5, "title": "Tinnitus, Ohrgeräuschen" },
+    { "id": 6, "title": "Schwindel" },
+    { "id": 7, "title": "Kiefergelenkbeschwerden" }
   ]
 }

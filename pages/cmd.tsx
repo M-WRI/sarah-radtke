@@ -25,13 +25,6 @@ const Cmd: NextPage = () => {
         center
         underline
       />
-
-      {/* Create out of this a component */}
-      {/* <InfoBox
-        headline={data.infoBoxOne.title}
-        list={data.infoBoxOne.list}
-        bg={false}
-      /> */}
       <InfoBox headline={data.symptomTitle} list={data.symptomList} />
       <PhotoBox
         title={data.photoTitle}
