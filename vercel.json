@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "handle": "filesystem",
+      "src": "/.*\\.(js|css|html|json|ico|png|jpg|jpeg|gif|ts|tsx|scss)$",
+      "headers": {
+        "Content-Encoding": "gzip"
+      }
+    }
+  ]
+}
