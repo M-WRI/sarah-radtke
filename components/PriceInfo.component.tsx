@@ -6,7 +6,7 @@ import data from "../api/priceInformation.json";
 // STYLES
 import styles from "../styles/PriceIformation.module.scss";
 
-export const PriceInfo = ():JSX.Element => {
+export const PriceInfo = (): JSX.Element => {
   return (
     <section className={styles.container}>
       <Headline type="h1" center>
@@ -17,12 +17,10 @@ export const PriceInfo = ():JSX.Element => {
           <Text center margin={false}>
             {data.generalInformation}
           </Text>
-        </div>
-        <div>
-          <Headline type="sanserif" center>
-            {data.subHead}
-          </Headline>
-          <Text center>{data.price}</Text>
+
+          <div style={{ marginTop: "2rem" }}>
+            <Text center>{data.price}</Text>
+          </div>
         </div>
       </div>
     </section>

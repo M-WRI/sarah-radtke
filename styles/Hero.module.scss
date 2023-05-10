@@ -6,7 +6,7 @@
   height: 100vh;
   position: relative;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto 10rem auto;
 
   .imageContainer {
     height: 75vh;
@@ -37,7 +37,7 @@
 .heroTextContainer {
   max-width: 40rem;
   position: absolute;
-  bottom: 5vh;
+  bottom: -15vh;
   right: 0;
   background: var(--white);
   box-shadow: var(--box-shadow);
@@ -47,6 +47,7 @@
 @media (max-width: 450px) {
   .container {
     height: unset;
+    margin: 0 auto;
 
     .imageContainer {
       margin-top: 3rem;

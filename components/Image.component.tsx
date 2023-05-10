@@ -9,7 +9,7 @@ import Massage from "../img/massage_img_sarah_radtke.jpeg";
 import Fruchtbarkeitsmassage from "../img/fruchtbarkeitsmassage_img_sarah_radtke.jpeg";
 import Lymphdrainage from "../img/lymphdrainage_img_sarah_radtke.jpeg";
 import Bindegewebe from "../img/bindegewebsmassage_img_sarah_radtke.jpeg";
-import Manual from "../img/manual_therapy_img_sarah_radtke.jpeg";
+import Manual from "../img/manuelle_therapie_title_sarah_radtke.jpg";
 import About from "../img/about_img_sarah_radkte.jpeg";
 import MittelPunkt from "../img/mittelpunkt_img_sarah_radtke.jpeg";
 import Personal from "../img/personal_img_sarah_radtke.jpeg";

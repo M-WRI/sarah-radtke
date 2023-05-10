@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "title": "CMD",
-    "text": "Die Abkürzung CMD steht für Craniomandibuläre Dysfunktion und ist ein Überbegriff für Fehlregulationen und/ oder Schmerzen der Muskel- und/oder Gelenkfunktion der Kiefergelenke.",
-    "img": "cmd",
-    "alt": "CMD Sarah Radtke",
-    "link": "cmd"
+    "title": "Physiotherapie",
+    "text": "Physiotherapie ist eine Behandlungsmethode, bei der der Therapeut nicht nur die körperliche Symptomatik, sondern auch die emotionalen und mentalen Aspekte des Patienten berücksichtigt. Dies ermöglicht eine umfassendere Betrachtung des Gesundheitszustands und eine individuellere Behandlungsplanung.",
+    "img": "massage",
+    "alt": "Physiotherapie Sarah Radtke",
+    "link": "massage"
   },
   {
     "id": 2,
@@ -14,14 +14,6 @@
     "img": "manual",
     "alt": "Manuelle Therapie Sarah Radtke",
     "link": "manuelle-therapie"
-  },
-  {
-    "id": 3,
-    "title": "Massage",
-    "text": "Die Massagetherapie ist eine der bekanntesten und ältesten Heilmethoden und entstand aus einer griechisch-römischen Tradition. Sie wird bis heute in vielen verschieden Bereichen eingesetzt.",
-    "img": "massage",
-    "alt": "Massage Sarah Radtke",
-    "link": "massage"
   },
   {
     "id": 4,

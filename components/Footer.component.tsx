@@ -28,9 +28,6 @@ export const Footer = (): JSX.Element => {
         <Text margin={false} center>
           {data.schedule.partII}
         </Text>
-        <Text margin={false} center>
-          {data.schedule.partIII}
-        </Text>
       </div>
       <div className={styles.contactContainer}>
         <Text margin={false} center>
